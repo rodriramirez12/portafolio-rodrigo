@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-custom.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap">
+<title>Portafolio</title>
+	
+<!--SEO-->
+<meta name="Description" content="Portafolio de Rodrigo Ramírez, con proyectos de producción audiovisual, videografía y fotografía. Incluye sección de contacto con ubicación, teléfono y correo.">
+<meta name="Keywords" content="contacto de rodrigo ramirez, contact us, contact, rodrigo ramirez contacto, ubicación de rodrigo ramirez, rodrigo ramirez tegucigalpa">
+</head>
+
+<body>
+    <header
+		<nav class= "navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rodrigo Ramirez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <section id="about" class="section-container text-center">
+		<div class="row">
+		<article class="col-lg-6 col-sm-6 col-12">
+			<h2>Acerca de mí</h2>
+        <p>Soy Rodrigo Ramírez, un creativo impulsado por la pasión por la producción audiovisual. Para mí, cada proyecto es una oportunidad para transformar ideas en imágenes que cuentan historias y despiertan emociones. <br>
+		Mi trabajo es el reflejo de un espíritu incansable que busca innovar, experimentar y conectar a través del arte visual. Me motiva el desafío de plasmar lo inefable en cada toma, edición y animación, creando experiencias que trascienden lo convencional. <br>
+		Con una visión que combina sensibilidad estética y técnica, encuentro en cada detalle la chispa que enciende mi creatividad y me impulsa a seguir explorando nuevos horizontes.</p>
+		</article>
+			
+		<article class="col-lg-6 col-sm-6 col-12">
+			<img src="img/Foto Mia.png"alt="foto mia" class="img-fluid" width="300px">
+		</article>
+		</div>
+        
+    </section>
+
+    <section id="services" class="section-container text-center">
+        <h2>Mis Servicios</h2>
+        <div class="row">
+            <article class="col-lg-4 col-sm-4 col-12"><i class="fas fa-video fa-3x text-primary"></i>
+				<p>Videografía</p>
+			</article>
+			
+            <article class="col-lg-4 col-sm-4 col-12"><i class="fas fa-camera fa-3x text-primary"></i>
+				<p>Fotografía</p>
+				</article>
+				
+            <article class="col-lg-4 col-sm-4 col-12"><i class="fas fa-film fa-3x text-primary"></i>
+				<p>Producción Audiovisual</p>
+				</article>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section-container text-center">
+        <h2>Portafolio</h2>
+        <p>Algunos de mis proyectos destacados. De igual manera, para contar con más proyectos, no dudes en contactarme y pláticamos.</p>
+       <div class="gallery">
+    <a href="img1.jpg" data-fancybox="gallery" data-caption="Imagen 1">
+      <img src="img/Ice Monster Pic Final.png" alt="Imagen 1">
+    </a>
+    <a href="img2.jpg" data-fancybox="gallery" data-caption="Imagen 2">
+      <img src="img/Monster chains Final Pic.png"alt="Imagen 2">
+    </a>
+    <a href="img3.jpg" data-fancybox="gallery" data-caption="Imagen 3">
+      <img src="img/Foto Monster Blanca 1.png" alt="Imagen 3">
+    </a>
+    <a href="img4.jpg" data-fancybox="gallery" data-caption="Imagen 4">
+      <img src="img/Air Force Chavos.png" alt="Imagen 4" width="800px">
+    </a>
+    <a href="img5.jpg" data-fancybox="gallery" data-caption="Imagen 5">
+      <img src="img/romeo 1.png" alt="Imagen 5">
+    </a>
+  </div>
+		
+    </section>
+
+    <section id="contact" class="section-container text-center">
+        <h2>Contactáctame</h2>
+        <form>
+            <input type="text" class="form-control mb-3" placeholder="Nombre" required>
+            <input type="email" class="form-control mb-3" placeholder="Correo" required>
+            <textarea class="form-control mb-3" placeholder="Mensaje" rows="4" required></textarea>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer-section text-center bg-dark text-white py-3">
+        <p>&copy; Rodrigo Ramirez</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("[data-fancybox='gallery']").fancybox({
+      loop: true,
+      buttons:
+        'zoom',
+        'slideShow',
+        'thumbs',
+        'close'
+      ]
+    });
+  });
+</script>
+</body>
+	
+</body>
+</html>
